@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.logoMain-fuente {
+  font-family: "Fira Code", monospace;
+  /* font-family: 'Shadows Into Light', cursive; */
+  font-size: 1.5rem;
+}
+
+.underlines:hover {
+  text-decoration: underline;
+  text-decoration-color: #ff561e;
+  text-underline-offset: 4px;
+}
+
+.active {
+  @apply border-b-orange-button;
+}

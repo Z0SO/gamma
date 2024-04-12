@@ -13,7 +13,7 @@ export const Navbar = (props) => {
 
   return (
     // CAJA PADRE de aca no s encargamos del background
-    <div className="w-full bg-gradient-to-b from-gray-200 to-transparent fixed py-4 ">
+    <nav id="navbar" className="w-full bg-gradient-to-b shadow-navbar from-gray-200 to-transparent fixed py-4 ">
       <div className=" px-4 top-0 sm:px-6">
         {/* div general */}
         <div className=" -ml-4 md:px-12 px-2 -mt-2 flex flex-wrap items-center justify-between sm:flex-nowrap">
@@ -82,7 +82,7 @@ export const Navbar = (props) => {
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

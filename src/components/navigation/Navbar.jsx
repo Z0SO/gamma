@@ -7,9 +7,29 @@ import { useState } from "react";
 
 // import loadingButton from "../../assets/img/loading-button.gif";
 
+
+
+
 export const Navbar = (props) => {
   // variable de react que empieza en verdadero
   const [Loading, setLoading] = useState(true);
+
+  //  definimos la funcion scrollFunction
+  const scrollFunction = ()=>{
+
+    // declaramos un condicional donde si podemos obtener un elemento con el id navbar
+    if (document.getElementById('navbar')){
+      console.log((document.body.scrollTop))
+    }
+
+  }
+
+  // aqui llamamos al onscroll de window y le asignamos la funcion scrollfunction
+  window.onscroll = () => {
+    scrollFunction()
+  }
+
+  
 
   return (
     // CAJA PADRE de aca no s encargamos del background

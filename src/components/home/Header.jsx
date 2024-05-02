@@ -15,15 +15,15 @@ function Header() {
   return (
     <main>
       <div className="relative px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40">
+        <div className="mx-auto xl:pt-40 xl:pb-64 max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40">
           <div>
              <div>
-              <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
+              <h1 className="text-4xl font-bold pb-24 tracking-tight sm:text-center sm:text-7xl">
 
-                <span className="inline-flex ">Hey! </span>
-                <p className=" text-orange-button">
+                <span className="inline-flex ">Agencia de </span>
+                <span className=" text-orange-button">
                   <Typewriter
-                    words={["Hola", "Me llamo Lautaro", "Z0SO", "$ sudo rm -rf /*"]}
+                    words={[" creadores", " Z0SO", ' soñadores']}
                     loop={0}
                     cursor
                     cursorStyle="_"
@@ -34,7 +34,7 @@ function Header() {
                     // onType={handleType}
                   />
                   
-                </p>
+                </span>
                 
               </h1>
               <ul className="flex gap-8 items-center justify-center py-12">

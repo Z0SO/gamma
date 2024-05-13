@@ -7,16 +7,52 @@ import { useState } from "react";
 
 // import loadingButton from "../../assets/img/loading-button.gif";
 
+
+
+
 export const Navbar = (props) => {
   // variable de react que empieza en verdadero
   const [Loading, setLoading] = useState(true);
 
+  //  definimos la funcion scrollFunction
+  const scrollFunction = ()=>{
+
+
+    // declaramos un condicional donde si podemos obtener un elemento con el id navbar
+    if (document.getElementById('navbar') ){
+      console.log((document.body.scrollTop))
+
+      if ((document.body.scrollTop > 50) || (document.documentElement.scrollTop > 50)) {
+        
+        // Si se activa el scrolling del navbar, debe cambiarse el estilo
+        document.getElementById('navbar').classList.add('shadow-navbar')
+        document.getElementById('navbar').classList.add('bg-gray-100')
+
+
+
+      } else {
+        document.getElementById('navbar').classList.remove('shadow-navbar')
+        document.getElementById('navbar').classList.remove('bg-gray-100')
+      }
+
+
+    }
+
+  }
+
+  // aqui llamamos al onscroll de window y le asignamos la funcion scrollfunction
+  window.onscroll = () => {
+    scrollFunction()
+  }
+
+  
+
   return (
     // CAJA PADRE de aca no s encargamos del background
-    <div className="w-full bg-gradient-to-b from-gray-200 to-transparent fixed py-4 ">
+    <nav id="navbar" className="z-50 w-full fixed py-4 transition duration-500">
       <div className=" px-4 top-0 sm:px-6">
         {/* div general */}
-        <div className=" -ml-4 md:px-12 px-2 -mt-2 flex flex-wrap items-center justify-between sm:flex-nowrap">
+        <div className=" -ml-4 md:px-12 px-2 -mt-2  flex flex-wrap items-center justify-between sm:flex-nowrap">
           {/* SECCION DEL LOGO */}
           <Link to={"/"}>
             <div className="ml-4 mt-2 ">
@@ -82,7 +118,7 @@ export const Navbar = (props) => {
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

@@ -20,6 +20,9 @@ media
 *.py[cod]
 *$py.class
 
+py/
+pyvenv.cfg
+
 # C extensions
 *.so
 

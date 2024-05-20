@@ -24,8 +24,7 @@ function Header() {
               </h1>
 
               <p className="mt-6 text-2xl leading-8 text-black">
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
-                amet fugiat veniam occaecat fugiat aliqua.
+              Explora cómo enfrentamos desafíos únicos, desde el aumento de la visibilidad en línea hasta la generación de leads de alta calidad y la mejora de la retención de clientes. Descubre cómo nuestras estrategias personalizadas y nuestra experiencia en diversas industrias han transformado marcas y empresas, impulsándolas hacia el éxito en un mercado cada vez más competitivo.
               </p>
 
             </div>

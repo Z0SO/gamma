@@ -15,10 +15,10 @@ function Header() {
   return (
     <main>
       <div className="relative px-6 lg:px-8">
-        <div className="mx-auto xl:pt-40 xl:pb-64 max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40">
+        <div className="mx-auto max-w-full xl:mx-12 xl:pt-40 xl:pb-64 lg:pt-40 lg:pb-48 pt-24 pb-12">
           <div>
-             <div>
-              <h1 className="text-4xl font-bold pb-24 tracking-tight sm:text-center sm:text-7xl">
+            <div>
+              <h1 className="text-4xl transition-colors  duration-150 hover:text-orange-button font-semibold pb-16 tracking-tight sm:text-7xl">
 
                 <span className="inline-flex ">Agencia de </span>
                 <span className=" text-orange-button">
@@ -30,14 +30,14 @@ function Header() {
                     typeSpeed={70}
                     deleteSpeed={50}
                     delaySpeed={1000}
-                    // onLoopDone={handleDone}
-                    // onType={handleType}
+                  // onLoopDone={handleDone}
+                  // onType={handleType}
                   />
-                  
+
                 </span>
-                
+
               </h1>
-              <ul className="flex gap-8 items-center justify-center py-12">
+              <ul className="flex gap-8">
                 <li className="inline-flex border-b-2 border-transparent hover:border-b-orange-button transition duration-300 hover:ease-in-out">
                   <Link
                     to="/servicios/servicio1"
@@ -79,7 +79,7 @@ function Header() {
                   </Link>
                 </li>
               </ul>
-              
+
             </div>
             <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
               <svg

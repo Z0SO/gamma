@@ -1,3 +1,4 @@
+import CasesList from 'components/cases/CasesList';
 import Header from 'components/cases/Header';
 import Footer from 'components/navigation/Footer';
 import Navbar from 'components/navigation/Navbar';
@@ -10,7 +11,8 @@ function Casos() {
       <Navbar />
 
       <Header />
-    
+      <CasesList />
+
       <Footer />
     </Layout>
   );

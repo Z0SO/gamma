@@ -7,7 +7,7 @@ function Servicios() {
   return (
     <Layout>
       <Navbar />
-      <div className="pt-28">Home</div>
+      <div className="pt-28">servicios</div>
       <Footer />
     </Layout>
   );
